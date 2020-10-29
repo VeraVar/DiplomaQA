@@ -2,7 +2,14 @@ Thumbs.db*
 .DS_Store
 HELP.md
 .gradle
+.allure
 build/
+target/
+data/
+data_mysql/
+data_pg/
+node_modules/
+node_container/
 
 ### STS ###
 .apt_generated
@@ -43,3 +50,4 @@ out/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+!SUT/aqa-shop.jar
