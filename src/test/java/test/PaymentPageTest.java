@@ -285,7 +285,7 @@ public class PaymentPageTest {
     }
 
     @Test
-    public void shouldWrongFormatNotificationIfPayByRusLetterCardHolder() {
+    public void shouldWrongFormatNotificationIfPayByRusCardHolder() {
         offerPage.openPaymentByCard();
         val cardInfo = getCardInfoWithRusCardHolder();
         paymentPage.setCardInfo(cardInfo);

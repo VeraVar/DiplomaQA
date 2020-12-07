@@ -21,8 +21,8 @@ public class PaymentPage {
     private final SelenideElement cardCvvField = $$(".input__inner").findBy(text("CVC/CVV"))
             .$(".input__control");
     private final SelenideElement continueButton = $$("button").findBy(text("Продолжить"));
-    private final SelenideElement successNotification = $(byText("Операция одобрена Банком"));
-    private final SelenideElement errorNotification = $(byText("Ошибка! Банк отказал в проведении операции"));
+    private final SelenideElement successNotification = $(byText("Операция одобрена Банком."));
+    private final SelenideElement errorNotification = $(byText("Ошибка! Банк отказал в проведении операции."));
     private final SelenideElement wrongFormatNotification = $(byText("Неверный формат"));
     private final SelenideElement fieldRequiredNotification = $(byText("Поле обязательно для заполнения"));
     private final SelenideElement wrongExpirationDateNotification = $(byText("Неверно указан срок действия карты"));
