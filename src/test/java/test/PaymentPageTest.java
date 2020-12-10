@@ -30,11 +30,6 @@ public class PaymentPageTest {
     }
 
     @AfterAll
-    static void cleanDB() {
-        SQLData.cleanDB();
-    }
-
-    @AfterAll
     static void removeReport() {
         SelenideLogger.removeListener("allure");
     }
@@ -85,14 +80,6 @@ public class PaymentPageTest {
     public void shouldWrongFormatNotificationIfPayBy16ZeroCardNumber() {
         offerPage.openPaymentByCard();
         val cardInfo = getCardInfoWith16ZeroCardNumber();
-        paymentPage.setCardInfo(cardInfo);
-        paymentPage.getWrongFormatNotification();
-    }
-
-    @Test
-    public void shouldWrongFormatNotificationIfPayByOverageCardNumber() {
-        offerPage.openPaymentByCard();
-        val cardInfo = getCardInfoWithOverageCardNumber();
         paymentPage.setCardInfo(cardInfo);
         paymentPage.getWrongFormatNotification();
     }
@@ -326,14 +313,6 @@ public class PaymentPageTest {
     }
 
     @Test
-    public void shouldWrongFormatNotificationIfPayByOverageCardCvv() {
-        offerPage.openPaymentByCard();
-        val cardInfo = getCardInfoWithOverageCardCvv();
-        paymentPage.setCardInfo(cardInfo);
-        paymentPage.getWrongFormatNotification();
-    }
-
-    @Test
     public void shouldWrongFormatNotificationIfPayByIncompleteCardCvv() {
         offerPage.openPaymentByCard();
         val cardInfo = getCardInfoWithIncompleteCardCvv();
@@ -419,14 +398,6 @@ public class PaymentPageTest {
     public void shouldWrongFormatNotificationIfCreditBy16ZeroCardNumber() {
         offerPage.openPaymentByCredit();
         val cardInfo = getCardInfoWith16ZeroCardNumber();
-        paymentPage.setCardInfo(cardInfo);
-        paymentPage.getWrongFormatNotification();
-    }
-
-    @Test
-    public void shouldWrongFormatNotificationIfCreditByOverageCardNumber() {
-        offerPage.openPaymentByCredit();
-        val cardInfo = getCardInfoWithOverageCardNumber();
         paymentPage.setCardInfo(cardInfo);
         paymentPage.getWrongFormatNotification();
     }
@@ -655,14 +626,6 @@ public class PaymentPageTest {
     public void shouldWrongFormatNotificationIfCreditBy3ZeroCardCvv() {
         offerPage.openPaymentByCredit();
         val cardInfo = getCardInfoWith3ZeroCardCvv();
-        paymentPage.setCardInfo(cardInfo);
-        paymentPage.getWrongFormatNotification();
-    }
-
-    @Test
-    public void shouldWrongFormatNotificationIfCreditByOverageCardCvv() {
-        offerPage.openPaymentByCredit();
-        val cardInfo = getCardInfoWithOverageCardCvv();
         paymentPage.setCardInfo(cardInfo);
         paymentPage.getWrongFormatNotification();
     }

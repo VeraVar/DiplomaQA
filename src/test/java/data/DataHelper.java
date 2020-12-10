@@ -48,14 +48,6 @@ public class DataHelper {
                 "Card Holder",
                 "123");
     }
-    public static CardInfo getCardInfoWithOverageCardNumber() {
-        return new CardInfo(
-                "1234 1234 1234 1234 1",
-                "03",
-                "22",
-                "Card Holder",
-                "123");
-    }
     public static CardInfo getCardInfoWithIncompleteCardNumber() {
         return new CardInfo(
                 "1234 1234 1234 123",
@@ -283,14 +275,6 @@ public class DataHelper {
                 "22",
                 "Card Holder",
                 "000");
-    }
-    public static CardInfo getCardInfoWithOverageCardCvv() {
-        return new CardInfo(
-                "4444 4444 4444 4441",
-                "03",
-                "22",
-                "Card Holder",
-                "1234");
     }
     public static CardInfo getCardInfoWithIncompleteCardCvv() {
         return new CardInfo(

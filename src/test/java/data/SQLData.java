@@ -24,21 +24,6 @@ public class SQLData {
         return conn;
     }
 
-    public static void cleanDB() {
-        val runner = new QueryRunner();
-        val creditRequest = "DELETE FROM credit_request_entity";
-        val order = "DELETE FROM order_entity";
-        val payment = "DELETE FROM payment_entity";
-
-        try (val conn = getConnection()) {
-            runner.update(conn, creditRequest);
-            runner.update(conn, order);
-            runner.update(conn, payment);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-
     public static String getStatusLastPaymentTransaction() {
         String status = null;
         try {
