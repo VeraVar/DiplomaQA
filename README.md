@@ -1,7 +1,9 @@
 #  Описание процедуры запуска авто-тестов
 
 [План автоматизации тестирования](https://github.com/VeraVar/DiplomaQA/blob/master/Documentation/Plan.md)
+
 [Отчёт о проведённом тестировании](https://github.com/VeraVar/DiplomaQA/blob/master/Documentation/Report.md)
+
 [Отчёт о проведённой автоматизации](https://github.com/VeraVar/DiplomaQA/blob/master/Documentation/Summary.md)
 
 ## Необходимое ПО:
