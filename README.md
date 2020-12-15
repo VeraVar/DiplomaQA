@@ -1,5 +1,9 @@
 #  Описание процедуры запуска авто-тестов
 
+[План автоматизации тестирования](https://github.com/VeraVar/DiplomaQA/blob/master/Documentation/Plan.md)
+[Отчёт о проведённом тестировании](https://github.com/VeraVar/DiplomaQA/blob/master/Documentation/Report.md)
+[Отчёт о проведённой автоматизации](https://github.com/VeraVar/DiplomaQA/blob/master/Documentation/Summary.md)
+
 ## Необходимое ПО:
 1.	IntelliJ IDEA [(ссылка для установки)](https://www.jetbrains.com/idea/download/#section=windows).
 1.	Docker Desktop или Docker Toolbox в зависимости от операционной системы [(ссылка для установки)](https://www.docker.com/get-started).
@@ -18,7 +22,7 @@ docker-compose up
 - `java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar SUT/aqa-shop.jar` (для MySQL)
   
 или
-- `java -Dspring.datasource-postgresql.url=jdbc:postgresql://localhost:5432/app -jar SUT/aqa-shop.jar` (для PostgreSQL)
+- `java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/app -jar SUT/aqa-shop.jar` (для PostgreSQL)
 
 ## Запуск тестов
 В новой вкладке терминала ввести команду для запуска авто-тестов в зависимости от запущенной ранее БД:

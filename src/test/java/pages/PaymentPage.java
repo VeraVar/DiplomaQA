@@ -1,4 +1,4 @@
-package page;
+package pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
@@ -37,27 +37,27 @@ public class PaymentPage {
         continueButton.click();
     }
 
-    public void getSuccessNotification() {
+    public void waitSuccessNotification() {
         successNotification.waitUntil(Condition.visible, 15000);
     }
 
-    public void getErrorNotification() {
+    public void waitErrorNotification() {
         errorNotification.waitUntil(Condition.visible, 15000);
     }
 
-    public void getWrongFormatNotification() {
+    public void waitWrongFormatNotification() {
         wrongFormatNotification.waitUntil(Condition.visible, 15000);
     }
 
-    public void getFieldRequiredNotification() {
+    public void waitFieldRequiredNotification() {
         fieldRequiredNotification.waitUntil(Condition.visible, 15000);
     }
 
-    public void getWrongExpirationDateNotification() {
+    public void waitWrongExpirationDateNotification() {
         wrongExpirationDateNotification.waitUntil(Condition.visible, 15000);
     }
 
-    public void getCardExpiredNotification() {
+    public void waitCardExpiredNotification() {
         cardExpiredNotification.waitUntil(Condition.visible, 15000);
     }
 }
